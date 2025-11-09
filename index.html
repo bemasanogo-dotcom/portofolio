@@ -10,71 +10,108 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!--la barre de navigation-->
+   <header>
+    <!--navbar-->
     <nav>
-        <h1>SANOGO BEMA</h1>
-        <div class="navbar">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+      <div>
+        <h1>Mon portofolio</h1>
+        <ul>
+              <li><a href="#accueil">Home</a></li>
+              <li><a href="#a_propos">About</a></li>
+              <li><a href="#travaux">Work</a></li>
+              <li><a href="#resume">Resume</a></li>
+              <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
-   <section id="home" class="home">
-    <div class="intro">
-      <h2>Bonjour, je suis <span>SANOGO BEMA</span></h2>
-      <p>Développeur Web débutant, passionné et motivé à apprendre chaque jour.</p>
+   </header>
+   <!--section hero-->
+   <main>
+    <section>
+      <h2>Salut, je suis <span>SANOGO BEMA</span></h2>
+      <p>Développeur web débutant, passionné par la création de sites modernes et accessibles.</p>
       <a href="#contact" class="btn">Me contacter</a>
-    </div>
-  </section>
+    </section>
+    <!--section a propos-->
+     <section id="a_propos">
+        <h2>À propos de moi</h2>
+        <p>Je suis un passionné du web, motivé à apprendre et à progresser chaque jour.</p>
 
-  <!-- Section À propos -->
-  <section id="about" class="about">
-    <h2>À propos de moi</h2>
-    <p>
-      Je m'appelle <strong>SANOGO BEMA</strong>. Je débute dans le développement web et j’apprends à créer des sites modernes et simples.
-      J'aime découvrir de nouvelles technologies et développer mes compétences pas à pas.
-    </p>
-  </section>
+        <h3>Mes centres d'intérêt :</h3>
+        <ul>
+            <li>Programmation</li>
+            <li>Lecture</li>
+            <li>Design web</li>
+        </ul>
+     </section>
+     <!--section travaux-->
+    <section id="travaux">
+        <h2>Mes Projets</h2>
 
-  <!-- Section Travaux -->
-  <section id="work" class="work">
-    <h2>Mon Projet</h2>
-    <div class="project">
-        <h3>Mon Portfolio Personnel </h3>
-        <p>
-          Ce site est mon premier projet de développement web.  
-          Il a été conçu avec HTML et CSS pour présenter mon profil, mon apprentissage et mes objectifs.
-        </p>
-    </div>
-  </section>
+        <article>
+            <h3>Projet 1 : Portfolio Personnel</h3>
+            <p>Création de mon premier site web avec HTML et CSS pour présenter mes compétences.</p>
+        </article>
 
-  <!-- Section CV -->
-  <section id="resume" class="resume">
-    <h2>Mon CV</h2>
-    <p><strong>Formation :</strong> Débutant en développement web (auto-apprentissage)</p>
-    <p><strong>Compétences :</strong> HTML, CSS, curiosité, apprentissage rapide</p>
-    <p><strong>Objectif :</strong> Devenir un développeur web compétent et professionnel</p>
-    <a href="#" class="btn">Télécharger mon CV</a>
-  </section>
+        <article>
+            <h3>Projet 2 : Page de Menu</h3>
+            <p>Une page simple de restaurant utilisant des listes et des sections bien structurées.</p>
+        </article>
 
-  <!-- Section Contact -->
-  <section id="contact" class="contact">
-    <h2>Contactez-moi</h2>
-    <form action="#" method="post" class="contact-form">
-      <input type="text" placeholder="Votre nom" required>
-      <input type="email" placeholder="Votre email" required>
-      <textarea placeholder="Votre message" required></textarea>
-      <button type="submit" class="btn">Envoyer</button>
-    </form>
-  </section>
+        <h3>Langages utilisés :</h3>
+        <table border="1">
+            <tr>
+                <th>Langage</th>
+                <th>Niveau</th>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>Débutant</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>Débutant</td>
+            </tr>
+        </table>
 
-  <footer>
-    <p>2025 SANOGO BEMA. Tous droits réservés.</p>
-    <a href="#home" class="btn">Retour en haut</a>
-  </footer>
+        <!-- Vidéo -->
+        <h3>Vidéo de démonstration :</h3>
+        <video src="videos/video demonstration.mp4" controls width="400px"></video> 
+       
+    <!--section cv-->
+    <section id="resume">
+        <h2>Mon CV</h2>
+        <p><strong>Formation :</strong> Étudiant en développement web</p>
+        <p><strong>Compétences :</strong> HTML, CSS, créativité, rigueur</p>
+        <p><strong>Objectif :</strong> Devenir développeur web professionnel</p>
+
+        <!-- Audio -->
+        <h3>Petite présentation audio :</h3>
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            Votre navigateur ne supporte pas l'audio.
+        </audio>
+    </section>
+    <!-- SECTION CONTACT -->
+    <section id="contact">
+        <h2>Contactez-moi</h2>
+        <form action="#" method="post">
+            <label>Nom :</label>
+            <input type="text" name="nom" required><br><br>
+
+            <label>Email :</label>
+            <input type="email" name="email" required><br><br>
+
+            <label>Message :</label><br>
+            <textarea name="message" rows="5" cols="30"></textarea><br><br>
+
+            <input type="submit" value="Envoyer">
+        </form>
+    </section>
+   </main>
+   <footer>
+      <p> 2025 SANOGO BEMA — Tous droits réservés.</p>
+      <p><a href="#Home">⬆️ Retour en haut</a></p>
+   </footer>
 </body>
 </html>
