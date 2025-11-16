@@ -12,11 +12,11 @@
 <body>
    <header>
     <!--navbar-->
-    <nav>
-      <div>
+    <nav class="navbar">
+      <div class="">
         <h1>Mon portofolio</h1>
         <ul>
-              <li><a href="#accueil">Home</a></li>
+              <li><a href="#">Home</a></li>
               <li><a href="#a_propos">About</a></li>
               <li><a href="#travaux">Work</a></li>
               <li><a href="#resume">Resume</a></li>
@@ -27,7 +27,7 @@
    </header>
    <!--section hero-->
    <main>
-    <section>
+    <section class="hero">
       <h2>Salut, je suis <span>SANOGO BEMA</span></h2>
       <p>Développeur web débutant, passionné par la création de sites modernes et accessibles.</p>
       <a href="#contact" class="btn">Me contacter</a>
@@ -48,15 +48,15 @@
     <section id="travaux">
         <h2>Mes Projets</h2>
 
-        <article>
+        <div class="articl">
             <h3>Projet 1 : Portfolio Personnel</h3>
             <p>Création de mon premier site web avec HTML et CSS pour présenter mes compétences.</p>
-        </article>
+        </div>
 
-        <article>
+        <div class="artic2">
             <h3>Projet 2 : Page de Menu</h3>
             <p>Une page simple de restaurant utilisant des listes et des sections bien structurées.</p>
-        </article>
+        </div>
 
         <h3>Langages utilisés :</h3>
         <table border="1">
@@ -75,8 +75,10 @@
         </table>
 
         <!-- Vidéo -->
-        <h3>Vidéo de démonstration :</h3>
-        <video src="videos/video demonstration.mp4" controls width="400px"></video> 
+       <div class="video">
+            <h3>Vidéo de démonstration :</h3>
+            <video src="videos/video demonstration.mp4" controls ></video>
+       </div> 
        
     <!--section cv-->
     <section id="resume">
@@ -111,7 +113,6 @@
    </main>
    <footer>
       <p> 2025 SANOGO BEMA — Tous droits réservés.</p>
-      <p><a href="#Home">⬆️ Retour en haut</a></p>
    </footer>
 </body>
 </html>
